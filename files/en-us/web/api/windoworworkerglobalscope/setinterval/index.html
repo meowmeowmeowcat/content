@@ -18,10 +18,12 @@ browser-compat: api.WindowOrWorkerGlobalScope.setInterval
 ---
 <div>{{APIRef("HTML DOM")}}</div>
 
-<p><span class="seoSummary">The <strong><code>setInterval()</code></strong> method,
+<p>The <strong><code>setInterval()</code></strong> method,
     offered on the {{domxref("Window")}} and {{domxref("Worker")}} interfaces, repeatedly
     calls a function or executes a code snippet, with a fixed time delay between each
-    call.</span> It returns an interval ID which uniquely identifies the interval, so you
+    call.</p>
+
+<p>This method returns an interval ID which uniquely identifies the interval, so you
   can remove it later by calling {{domxref("WindowOrWorkerGlobalScope.clearInterval",
   "clearInterval()")}}. This method is defined by the
   {{domxref("WindowOrWorkerGlobalScope")}} mixin.</p>
@@ -53,7 +55,7 @@ var <em>intervalID</em> = setInterval(function[, delay]);
 </dl>
 
 <div class="note">
-  <p><strong>Note</strong>: Passing additional arguments to <code>setInterval()</code> in
+  <p><strong>Note:</strong> Passing additional arguments to <code>setInterval()</code> in
     the first syntax does not work in Internet Explorer 9 and earlier. If you want to
     enable this functionality on that browser, you must use a polyfill (see the <a
       href="#callback_arguments">Callback arguments</a> section).</p>
